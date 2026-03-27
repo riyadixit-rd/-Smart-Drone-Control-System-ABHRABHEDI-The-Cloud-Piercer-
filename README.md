@@ -157,7 +157,7 @@ python main.py
 
 ## 🎥 Demo  
 
-[▶️ Watch Demo]((https://drive.google.com/file/d/1spnb-yQeddxtjqglhgIE2d4RDMa8W85P/view?usp=drivesdk))
+[▶️ Watch Full Demo Video](https://drive.google.com/file/d/1spnb-yQeddxtjqglhgIE2d4RDMa8W85P/view?usp=drivesdk)
 
 ---
 
