@@ -84,27 +84,53 @@ Camera → Live Feed → User
 ```python
 import time
 
-def takeoff():
-    print("Taking off...")
-    time.sleep(2)
+class DroneController:
+    def __init__(self):
+        self.altitude = 0
+        print("Drone system initialized")
 
-def forward():
-    print("Moving forward")
-    time.sleep(2)
+    def connect(self):
+        print("Connecting to drone...")
+        time.sleep(2)
+        print("Connection established")
 
-def backward():
-    print("Moving backward")
-    time.sleep(2)
+    def takeoff(self):
+        print("Taking off...")
+        self.altitude = 10
+        time.sleep(2)
+        print(f"Reached altitude: {self.altitude}m")
 
-def land():
-    print("Landing...")
-    time.sleep(2)
+    def move(self, direction):
+        print(f"Moving {direction}")
+        time.sleep(2)
+
+    def hover(self, duration):
+        print(f"Hovering for {duration} seconds")
+        time.sleep(duration)
+
+    def return_to_base(self):
+        print("Returning to base...")
+        time.sleep(2)
+
+    def land(self):
+        print("Landing...")
+        self.altitude = 0
+        time.sleep(2)
+        print("Drone landed safely")
 
 if __name__ == "__main__":
-    takeoff()
-    forward()
-    backward()
-    land()
+    drone = DroneController()
+
+    drone.connect()
+    drone.takeoff()
+
+    drone.move("forward")
+    drone.move("left")
+
+    drone.hover(3)
+
+    drone.return_to_base()
+    drone.land()
 ```
 
 ---
