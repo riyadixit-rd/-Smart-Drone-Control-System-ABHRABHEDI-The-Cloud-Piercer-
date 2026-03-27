@@ -16,21 +16,34 @@ Integration of hardware, software, and communication systems
 Developed as part of academic work at VIT Bhopal University
 
 ✨ Features
+
 🎮 Manual Control via Code
+
 Control drone using Python commands
 Fine-grained movement control
+
 🎥 Live Video Streaming
+
 Real-time camera feed
 Enables surveillance and monitoring
+
 🧭 Autonomous Navigation
+
 GPS-based waypoint tracking
 Automated mission execution
+
 ⚡ Real-Time Communication
+
 Continuous command + feedback system
+
 🛑 Failsafe Mechanisms
+
 Auto return-to-base on low battery or signal loss
+
 🛠️ Tech Stack
+
 Language: Python
+
 Libraries: OpenCV, NumPy
 Hardware: Raspberry Pi
 Communication: WiFi / RF
