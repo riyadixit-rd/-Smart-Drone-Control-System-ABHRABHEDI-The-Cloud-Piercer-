@@ -56,6 +56,7 @@ Motors + Sensors
         ↓
 Camera → Live Feed → User
 ---
+```
 
 ## 🔧 Hardware  
 
@@ -172,3 +173,4 @@ python main.py
 ## ⭐ Final Note  
 
 A real-world project demonstrating **software + hardware + real-time system integration**.
+
