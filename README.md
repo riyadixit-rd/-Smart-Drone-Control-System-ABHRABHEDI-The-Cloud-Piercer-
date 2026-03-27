@@ -55,20 +55,32 @@ Flight Controller
 Motors + Sensors
         ↓
 Camera → Live Feed → User
-🔧 Hardware
-Raspberry Pi 4 – Main processing unit for control and data handling
-MPU9250 (IMU) – Provides orientation and stabilization using motion sensing
-u-blox M8N GPS – Enables accurate positioning and waypoint navigation
-Raspberry Pi Camera – Captures real-time video feed for monitoring
-BLDC Motors + ESCs – Generate thrust and control motor speed
-Li-Po Battery – Supplies power to the entire drone system
-Propellers – Convert motor rotation into lift for flight
-🧪 Testing
-Indoor stability testing
-Manual control via code
-Sensor calibration
-Outdoor test runs
-💻 Sample Control Code
+---
+
+## 🔧 Hardware  
+
+- **Raspberry Pi 4** – Main processing unit for control and data handling  
+- **MPU9250 (IMU)** – Provides orientation and stabilization using motion sensing  
+- **u-blox M8N GPS** – Enables accurate positioning and waypoint navigation  
+- **Raspberry Pi Camera** – Captures real-time video feed for monitoring  
+- **BLDC Motors + ESCs** – Generate thrust and control motor speed  
+- **Li-Po Battery** – Supplies power to the entire drone system  
+- **Propellers** – Convert motor rotation into lift for flight  
+
+---
+
+## 🧪 Testing  
+
+- Indoor stability testing  
+- Manual control via code  
+- Sensor calibration  
+- Outdoor test runs  
+
+---
+
+## 💻 Sample Control Code  
+
+```python
 import time
 
 def takeoff():
@@ -79,6 +91,10 @@ def forward():
     print("Moving forward")
     time.sleep(2)
 
+def backward():
+    print("Moving backward")
+    time.sleep(2)
+
 def land():
     print("Landing...")
     time.sleep(2)
@@ -86,40 +102,73 @@ def land():
 if __name__ == "__main__":
     takeoff()
     forward()
+    backward()
     land()
-🚀 Use Cases
-🛰️ Surveillance
-💊 Medicine delivery
-🌾 Agriculture monitoring
-🚨 Disaster response
-⚙️ Setup
+```
+
+---
+
+## 🚀 Use Cases  
+
+- 🛰️ Surveillance  
+- 💊 Medicine delivery  
+- 🌾 Agriculture monitoring  
+- 🚨 Disaster response  
+
+---
+
+## ⚙️ Setup  
+
+```bash
 git clone https://github.com/riyadixit-rd/smart-drone-system
 cd smart-drone-system
 pip install -r requirements.txt
 python main.py
-🎥 Demo
+```
 
-▶️ Watch Demo
+---
 
-⚠️ Challenges
-UI control integration failed → switched to code control
-Communication latency
-Hardware-software sync
-Flight stabilization
-💡 Learnings
-Real-time systems
-Embedded systems
-Drone control logic
-Hardware-software integration
-🔮 Future Improvements
-Web/mobile control interface
-AI-based object detection
-Obstacle avoidance
-Better battery efficiency
-👩‍💻 Contributors
-Riya Dixit
-Mahir Bali
-Devbrat Yadav
-⭐ Final Note
+## 🎥 Demo  
 
-A real-world project demonstrating software + hardware + real-time system integration.
+[▶️ Watch Demo](your-link)
+
+---
+
+## ⚠️ Challenges  
+
+- UI control integration failed → switched to code control  
+- Communication latency  
+- Hardware-software synchronization  
+- Flight stabilization  
+
+---
+
+## 💡 Learnings  
+
+- Real-time systems  
+- Embedded systems  
+- Drone control logic  
+- Hardware-software integration  
+
+---
+
+## 🔮 Future Improvements  
+
+- Web/mobile control interface  
+- AI-based object detection  
+- Obstacle avoidance  
+- Better battery efficiency  
+
+---
+
+## 👩‍💻 Contributors  
+
+- Riya Dixit  
+- Mahir Bali  
+- Devbrat Yadav  
+
+---
+
+## ⭐ Final Note  
+
+A real-world project demonstrating **software + hardware + real-time system integration**.
