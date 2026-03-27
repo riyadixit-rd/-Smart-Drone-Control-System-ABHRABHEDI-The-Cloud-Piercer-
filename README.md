@@ -1,80 +1,66 @@
-🚀 Smart Drone Control System (ABHRABHEDI – The Cloud Piercer)
+🚀 Smart Drone Control System
 
-A smart drone system designed for real-time manual control via code, live video streaming, and autonomous navigation, built for applications like surveillance, remote monitoring, and medicine delivery.
+(ABHRABHEDI – The Cloud Piercer)
+
+A smart drone system designed for manual control via code, live video streaming, and autonomous navigation, built for applications like surveillance, monitoring, and delivery.
 
 📌 Overview
 
 This project focuses on building an intelligent drone system capable of:
 
-Real-time manual control using code interface
+Real-time manual control using code
 Live video streaming from onboard camera
 Autonomous waypoint-based navigation
-Integration of hardware + software + communication systems
+Integration of hardware, software, and communication systems
 
-This project was developed as part of academic work at VIT Bhopal University
+Developed as part of academic work at VIT Bhopal University
 
 ✨ Features
 🎮 Manual Control via Code
-Direct drone control using Python-based commands
-Fine-grained control over movement and flight
+Control drone using Python commands
+Fine-grained movement control
 🎥 Live Video Streaming
-Real-time video feed from drone camera
+Real-time camera feed
 Enables surveillance and monitoring
 🧭 Autonomous Navigation
 GPS-based waypoint tracking
 Automated mission execution
 ⚡ Real-Time Communication
-Continuous command transmission and feedback
+Continuous command + feedback system
 🛑 Failsafe Mechanisms
-Return-to-base on low battery or signal loss
+Auto return-to-base on low battery or signal loss
 🛠️ Tech Stack
-Programming Language: Python
+Language: Python
 Libraries: OpenCV, NumPy
-Hardware Platform: Raspberry Pi
-Communication: Wireless (WiFi / RF)
-Optional AI: TensorFlow
+Hardware: Raspberry Pi
+Communication: WiFi / RF
+AI (Optional): TensorFlow
 🏗️ System Architecture
-User Input (Code Commands)
+User Input (Code)
         ↓
-Control Script (Python)
+Python Control Script
         ↓
-Communication Module (WiFi/RF)
+Communication Module
         ↓
-Drone Flight Controller
+Flight Controller
         ↓
 Motors + Sensors
         ↓
-Camera Module → Live Video Feed → User
+Camera → Live Feed → User
 📸 Hardware Components
-
-The drone system is built using the following components:
-
-Raspberry Pi 4 – Image processing & control
-MPU9250 – Motion sensing and stabilization
-u-blox M8N GPS – Navigation
-Raspberry Pi Camera – Video capture
-BLDC Motors (x4) + ESCs – Propulsion
-Li-Po Battery (2200 mAh) – Power
-Propellers (8-inch) – Lift
-
-👉 Refer to project documentation for visuals
-
-🛠️ Drone Assembly
-Frame construction and motor mounting
-Wiring of ESCs, sensors, and controller
-Integration of camera and communication modules
-🧪 Testing & Implementation
+Raspberry Pi 4
+MPU9250 (IMU Sensor)
+u-blox M8N GPS
+Raspberry Pi Camera
+BLDC Motors (x4) + ESCs
+Li-Po Battery (2200 mAh)
+Propellers (8-inch)
+🧪 Testing
 Indoor stability testing
 Manual flight control via code
-Sensor calibration and tuning
-Outdoor testing for real-world scenarios
-
-👉 Testing phases shown in project report
-
-🚀 Basic Drone Control Code (Sample)
-
-Below is a simple Python example to control a drone using command signals:
-
+Sensor calibration
+Outdoor real-world testing
+🚀 Basic Drone Control Code
 import time
 
 def takeoff():
@@ -99,46 +85,46 @@ if __name__ == "__main__":
     move_backward()
     land()
 
-⚠️ Note: This is a simplified representation. Actual implementation depends on hardware APIs and communication protocols.
+Note: Actual implementation depends on drone hardware and communication protocol.
 
 🚀 Use Cases
-🛰️ Surveillance (military & civilian)
-💊 Medicine delivery in remote areas
-🌾 Agricultural monitoring
-🚨 Disaster response and rescue operations
-⚙️ Installation & Setup
+Surveillance (military & civilian)
+Medicine delivery
+Agricultural monitoring
+Disaster response
+⚙️ Setup
 git clone https://github.com/riyadixit-rd/smart-drone-system
 cd smart-drone-system
 pip install -r requirements.txt
 python main.py
 🎥 Demo
 
-Add your demo video link here
+Add your demo video here:
 
-[▶️ Watch Demo Video](https://your-video-link.com)
+[▶️ Watch Demo Video](your-link-here)
 ⚠️ Challenges Faced
-Integration issues with initial UI-based control system
-Real-time communication delays
+UI integration issues (switched to code control)
+Communication delays
 Hardware-software synchronization
-Stabilization and calibration challenges
+Stabilization tuning
 💡 Learnings
-Real-time system design and debugging
-Embedded systems and communication protocols
-Drone control and navigation logic
+Real-time systems
+Embedded + communication systems
+Drone control logic
 Hardware-software integration
 🔮 Future Improvements
-Web/mobile-based control interface
-AI-based object detection & tracking
-Obstacle avoidance system
-Improved battery efficiency
+Web/mobile control interface
+AI-based object detection
+Obstacle avoidance
+Better battery efficiency
 👩‍💻 Contributors
 Riya Dixit
 Mahir Bali
 Devbrat Yadav
 📄 License
 
-This project is for academic and educational purposes.
+For academic and learning purposes.
 
 ⭐ Final Note
 
-This project demonstrates strong integration of software, hardware, and real-time systems, making it a practical and scalable solution for modern drone-based applications.
+This project demonstrates strong integration of software + hardware + real-time systems, making it a practical drone solution.
