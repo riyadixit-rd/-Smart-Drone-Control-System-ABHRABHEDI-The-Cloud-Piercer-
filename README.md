@@ -55,7 +55,7 @@ Flight Controller
 Motors + Sensors
         ↓
 Camera → Live Feed → User
----
+
 ```
 
 ## 🔧 Hardware  
